@@ -15,15 +15,3 @@ def is_kind_of_class(obj, a_class):
         return True
     else:
         return False
-
-class MyClass:
-    pass
-
-class MySubClass(MyClass):
-    pass
-
-obj = MySubClass()
-
-print(is_kind_of_class(obj, MyClass))
-print(is_kind_of_class(obj, MySubClass))
-print(is_kind_of_class(obj, str))

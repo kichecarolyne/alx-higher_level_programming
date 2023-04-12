@@ -8,6 +8,3 @@ class MyList(list):
     def print_sorted(self):
         """Print a list in sorted ascending order."""
         print(sorted(self))
-
-my_list = MyList([3, 1, 4, 1, 5, 9, 2, 6, 5])
-my_list.print_sorted()
