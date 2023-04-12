@@ -13,4 +13,17 @@ def is_kind_of_class(obj, a_class):
     """
     if isinstance(obj, a_class):
         return True
-    else False
+    else:
+        return False
+
+class MyClass:
+    pass
+
+class MySubClass(MyClass):
+    pass
+
+obj = MySubClass()
+
+print(is_kind_of_class(obj, MyClass))
+print(is_kind_of_class(obj, MySubClass))
+print(is_kind_of_class(obj, str))
